@@ -10,7 +10,7 @@
 </head>
 <body>
     <style>
-        html { font-family: sans-serif; color: rgba(0,0,0,0.8); background:#E6E9ED; font-size:1.75em;}
+        html { font-family: sans-serif; color: rgba(0,0,0,0.8); background:#E6E9ED; }
         #title {  font-weight: bold; font-size: 2.5em; border-bottom:4px solid #37BC9B; padding-bottom:0.25em;}
         #desc { margin-top:1em; margin-bottom:1em; font-size:1.5em; color:#434A54;}
         a {color:#DA4453; font-weight: bold;}
@@ -43,6 +43,22 @@
         }
         #selectors > span.active{
             color:#999;
+        }
+
+        /* For FULLSCREENED (F11) view */
+        @media (min-width: 1920px) and (min-height: 1080px) {
+            html {
+                font-size:1.75em;
+            }
+            /* Darker theme */
+            html {
+                background:#333;
+            }
+            a {color:#DA4453;}
+            a:hover {color:#ED5565;}
+            .card {
+                background:#ddd;
+            }
         }
     </style>
 
